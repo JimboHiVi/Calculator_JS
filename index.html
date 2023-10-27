@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Calculadora</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script type="text/javascript"  src="./js/calculator.js" charset="UTF-8"></script> 
+    <link rel="stylesheet" href="./styles/index.css">
+
+  </head>
+<body class="container-fluid">
+    
+<section class="row mainsct">
+    <div class="col-12 col-xl-3 sideimg">        
+    </div>
+    <div class="col-12 col-xl-6 contCal d-flex justify-content-center align-items-center">
+        <div class="row calculator">
+            <div class="col-12 col-md-8 label1 align-items-center">
+                <p>powered by :</p>                
+            </div>            
+            <div class="col-6 col-md-2 d-flex justify-content-end contLed">  
+                <div class="led-box">
+                    <div class="led-green"></div>              
+                </div>                             
+            </div>
+            <div class="col-6 col-md-2 d-flex justify-content-start contLed">
+                <div class="led-box ">
+                    <div class="led-red"></div>              
+                </div>               
+            </div>            
+            <div class="col-12 contBttn">
+                <input type="text" class="calcScr" id="screen" readonly disabled/>
+            </div>            
+            <div class="col-3 contBttn">
+                <input type="button" class="calcBttn grn" value="1" onclick="addSymbol('1')" />
+            </div>
+            <div class="col-3 contBttn">
+                <input type="button" class="calcBttn grn" value="2" onclick="addSymbol('2')" />
+            </div>
+            <div class="col-3 contBttn">
+                <input type="button" class="calcBttn grn" value="3" onclick="addSymbol('3')" />
+            </div>
+            <div class="col-3 contBttn">
+                <input type="button" class="calcBttn rd" value="+" onclick="addSymbol('+')" />
+            </div>
+            <div class="col-3 contBttn">
+                <input type="button" class="calcBttn grn" value="4" onclick="addSymbol('4')" />
+            </div>
+            <div class="col-3 contBttn">
+                <input type="button" class="calcBttn grn" value="5" onclick="addSymbol('5')" />
+            </div>
+            <div class="col-3 contBttn">
+                <input type="button" class="calcBttn grn" value="6" onclick="addSymbol('6')" />
+            </div>
+            <div class="col-3 contBttn">
+                <input type="button" class="calcBttn rd" value="-" onclick="addSymbol('-')" />
+            </div>
+            <div class="col-3 contBttn">
+                <input type="button" class="calcBttn grn" value="7" onclick="addSymbol('7')" />
+            </div>
+            <div class="col-3 contBttn">
+                <input type="button" class="calcBttn grn" value="8" onclick="addSymbol('8')" />
+            </div>
+            <div class="col-3 contBttn">
+                <input type="button" class="calcBttn grn" value="9" onclick="addSymbol('9')" />
+            </div>
+            <div class="col-3 contBttn">
+                <input type="button" class="calcBttn rd" value="*" onclick="addSymbol('*')" />
+            </div>
+            <div class="col-3 contBttn">
+                <input type="button" class="calcBttn orng" value="=" onclick="calculate()" />
+            </div>
+            <div class="col-3 contBttn">
+                <input type="button" class="calcBttn orng" value="C" onclick="clearScreen()" />
+            </div>
+            <div class="col-3 contBttn">
+                <input type="button" class="calcBttn orng" value="0" onclick="addSymbol('0')" />
+            </div>
+            <div class="col-3 contBttn">
+                <input type="button" class="calcBttn rd" value="/" onclick="addSymbol('/')" />
+            </div>
+            <div class="col-2 contLed"> 
+                <div class="led-box">
+                    <div class="led-orange"></div>              
+                </div> 
+            </div> 
+            <div class="col-10 contBttn">
+                <div class="label2">
+                    <p class="dymo">flux capacitor</p>
+                </div>
+            </div>
+        </div>
+            
+    </div>
+    <div class="col-12 col-xl-3 sideimg"></div>
+    
+        
+</section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+
+
+
+
+
+
+<!-- <html>
+<head>
+<script type="text/javascript"  src="./js/calculator.js" charset="UTF-8"></script> 
+<script>
+
+
+</script>
+</head>
+<body>
+
+    <input type="text" id="screen" />
+    <br>
+    <input type="button" value="1" onclick="addSymbol('1')" />
+    <input type="button" value="2" onclick="addSymbol('2')" />
+    <input type="button" value="3" onclick="addSymbol('3')" />
+    <input type="button" value="+" onclick="addSymbol('+')" />
+    <br>
+    <input type="button" value="4" onclick="addSymbol('4')" />
+    <input type="button" value="5" onclick="addSymbol('5')" />
+    <input type="button" value="6" onclick="addSymbol('6')" />
+    <input type="button" value="-" onclick="addSymbol('-')" />
+    <br>
+    <input type="button" value="7" onclick="addSymbol('7')" />
+    <input type="button" value="8" onclick="addSymbol('8')" />
+    <input type="button" value="9" onclick="addSymbol('9')" />
+    <input type="button" value="*" onclick="addSymbol('*')" />
+    <br>
+    <input type="button" value="=" onclick="calculate()" />
+    <input type="button" value="C" onclick="clearScreen()" />
+    <input type="button" value="0" onclick="addSymbol('0')" />
+    <input type="button" value="/" onclick="addSymbol('/')" />
+    
+
+
+</body>
+</html> -->

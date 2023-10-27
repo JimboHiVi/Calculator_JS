@@ -1,0 +1,8 @@
+%bgmg{
+  background-size: cover;
+  background-position: center; 
+}
+@mixin bgimg($url){
+  background-image: url($url);
+  @extend %bgmg;
+}

@@ -1,0 +1,143 @@
+.mainsct .sideimg, .mainsct .contCal, .calculator {
+  background-size: cover;
+  background-position: center;
+}
+
+@font-face {
+  font-family: "advanced_pixel_lcd-7";
+  src: url("../assets/advanced_pixel_lcd-7.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Dymo";
+  src: url("../assets/Dymo.ttf") format("truetype");
+}
+body {
+  font-family: "advanced_pixel_lcd-7";
+  font-size: 1.5rem;
+}
+
+.mainsct {
+  height: 100vh;
+}
+.mainsct .sideimg {
+  background-image: url("../assets/flux-capacitor-poster-denny-h.jpg");
+}
+.mainsct .contCal {
+  height: 100%;
+  background-image: url("../assets/bttf.png");
+}
+
+.calculator {
+  width: 60%;
+  padding: 0 0.5vw;
+  border: 3px solid black;
+  border-radius: 20px;
+  background-image: url("../assets/istockphoto-174997750-612x612.jpg");
+}
+.calculator .label1 {
+  text-align: center;
+  transform: rotate(2deg);
+  font-family: "Dymo";
+  font-size: 2.5rem;
+  color: black;
+}
+.calculator .contBttn {
+  padding: 0.5vh 0.2vw;
+}
+.calculator .contBttn .calcScr {
+  width: 100%;
+  padding: 0.5vh 0;
+  background-color: #858484;
+}
+.calculator .contBttn .calcBttn {
+  width: 100%;
+  padding: 0.5vh 0;
+  text-align: center;
+  background-color: #858484;
+  border-radius: 10px;
+}
+.calculator .contBttn .grn {
+  color: #b8d053;
+}
+.calculator .contBttn .grn:active {
+  box-shadow: 0 0 4px 4px #b8d053;
+}
+.calculator .contBttn .rd {
+  color: #ca3a1c;
+}
+.calculator .contBttn .rd:active {
+  box-shadow: 0 0 4px 4px #ca3a1c;
+}
+.calculator .contBttn .orng {
+  color: #e07c35;
+}
+.calculator .contBttn .orng:active {
+  box-shadow: 0 0 4px 4px #e07c35;
+}
+.calculator .contBttn .label2 {
+  text-align: right;
+  margin-right: 2vw;
+  transform: rotate(-4deg);
+  font-family: "Dymo";
+  font-size: 2.5rem;
+  color: red;
+}
+
+.contLed {
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#e2e2e2", endColorstr="#fefefe",GradientType=0 ); /* IE6-9 */
+  padding: 20px;
+}
+.contLed .led-box {
+  width: 25%;
+  aspect-ratio: 1/1;
+}
+.contLed .led-box .led-green {
+  margin: 0 auto;
+  width: 24px;
+  height: 24px;
+  background-color: #ABFF00;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #304701 0 -1px 9px, #89FF00 0 2px 12px;
+}
+.contLed .led-box .led-red {
+  margin: 0 auto;
+  width: 24px;
+  height: 24px;
+  background-color: #F00;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #441313 0 -1px 9px, rgba(255, 0, 0, 0.5) 0 2px 12px;
+  animation: blinkRed 0.5s infinite;
+}
+.contLed .led-box .led-orange {
+  margin: 0 auto;
+  width: 24px;
+  height: 24px;
+  background-color: #ffa200;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #808002 0 -1px 9px, #ffa200 0 2px 12px;
+  animation: blinkOrange 1.5s infinite;
+}
+@keyframes blinkRed {
+  from {
+    background-color: #F00;
+  }
+  50% {
+    background-color: #A00;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #441313 0 -1px 9px, rgba(255, 0, 0, 0.5) 0 2px 0;
+  }
+  to {
+    background-color: #F00;
+  }
+}
+@keyframes blinkOrange {
+  from {
+    background-color: #ffa200;
+  }
+  50% {
+    background-color: #aa6300;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #806902 0 -1px 9px, #ffa200 0 2px 0;
+  }
+  to {
+    background-color: #ffa200;
+  }
+}/*# sourceMappingURL=index.css.map */
